@@ -30,9 +30,9 @@ class Day1 : AoCDay {
 
     override fun part2(): Int {
         val multipliers = secondList.groupBy { it }.mapValues { it.value.size }
-        return firstList.map {
+        return firstList.sumOf {
             it * (multipliers[it] ?: 0)
-        }.sum()
+        }
     }
 
     private fun loadFile() {
