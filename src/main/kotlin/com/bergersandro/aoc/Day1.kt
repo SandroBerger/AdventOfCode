@@ -36,7 +36,7 @@ class Day1 : AoCDay {
     }
 
     private fun loadFile() {
-        fileParser.parse("data-${this::class.simpleName!!.lowercase()}.txt")?.map {
+        fileParser.parse("input-files/data-${this::class.simpleName!!.lowercase()}.txt")?.map {
             val pairs = it.split("   ")
             firstList.add(pairs[0].toInt())
             secondList.add(pairs[1].toInt())

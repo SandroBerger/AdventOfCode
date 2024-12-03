@@ -23,7 +23,7 @@ class Day3 : AoCDay {
     }
 
     private fun loadFile() {
-        fileParser.parse("data-${this::class.simpleName!!.lowercase()}.txt")?.map {
+        fileParser.parse("input-files/data-${this::class.simpleName!!.lowercase()}.txt")?.map {
             instructions.add(it)
         }
     }

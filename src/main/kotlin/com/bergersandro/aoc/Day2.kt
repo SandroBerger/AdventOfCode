@@ -64,7 +64,7 @@ class Day2 : AoCDay {
     }
 
     private fun loadFile() {
-        fileParser.parse("data-${this::class.simpleName!!.lowercase()}.txt")?.map {
+        fileParser.parse("input-files/data-${this::class.simpleName!!.lowercase()}.txt")?.map {
             val reportsLine = it.split(" ")
             reports.add(reportsLine.map { report -> report.toInt() })
         }

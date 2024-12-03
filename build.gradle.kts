@@ -37,7 +37,7 @@ tasks.register<JavaExec>("run") {
 fun registerDownloadTask(day: Int, sessionCookie: String) {
     tasks.register<Download>("downloadInputDay$day") {
         description = "Download input file for Advent of Code Day $day"
-        val destFile = file("src/main/resources/data-day$day.txt")
+        val destFile = file("src/main/resources/input-files/data-day$day.txt")
         onlyIf { !destFile.exists() }
         dest(destFile)
         onlyIfModified(true)
