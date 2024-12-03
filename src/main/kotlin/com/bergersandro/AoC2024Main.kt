@@ -26,7 +26,7 @@ fun main() {
     println(
         """
         ----------------------------------------------
-        "Total execution time: $totalExecutionTime ms"
+        Total execution time: $totalExecutionTime ms
         """.trimIndent()
     )
 }
